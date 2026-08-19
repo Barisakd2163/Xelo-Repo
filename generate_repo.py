@@ -7,6 +7,8 @@ repo_name = "Xelo-Repo"
 base_url = f"https://raw.githubusercontent.com/{repo_owner}/{repo_name}/builds"
 github_repo = f"https://github.com/{repo_owner}/{repo_name}"
 
+valid_tv_types = {"Movie", "TvSeries", "Anime", "AnimeMovie", "OVA", "Cartoon", "Documentary", "Live", "NSFW", "Others", "AsianDrama", "Torrent"}
+
 plugins = []
 
 for item in sorted(os.listdir('.')):
@@ -17,23 +19,26 @@ for item in sorted(os.listdir('.')):
                 txt = f.read()
             
             v_match = re.search(r'version\s*=\s*(\d+)', txt)
-            version = int(v_match.group(1)) if v_match else 1
+            version = max(1, int(v_match.group(1))) if v_match else 1
             
             d_match = re.search(r'description\s*=\s*"(.*?)"', txt)
             desc = d_match.group(1) if d_match else f"{item} Plugin"
             
-            # Set language to "all" so CloudStream shows it unconditionally!
+            # Map all to "all" so Cloudstream never hides any plugin
             lang = "all"
             
             tv_match = re.search(r'tvTypes\s*=\s*listOf\((.*?)\)', txt)
             if tv_match:
                 types_raw = tv_match.group(1)
-                tv_types = [t.strip().strip('"').strip('\'') for t in types_raw.split(',') if t.strip()]
+                parsed_types = [t.strip().strip('"').strip('\'') for t in types_raw.split(',') if t.strip()]
+                clean_types = [t if t in valid_tv_types else "Others" for t in parsed_types]
+                if not clean_types:
+                    clean_types = ["Others"]
             else:
-                tv_types = ["Movie", "TvSeries"]
+                clean_types = ["Movie", "TvSeries"]
             
             i_match = re.search(r'iconUrl\s*=\s*"(.*?)"', txt)
-            icon = i_match.group(1) if i_match else ""
+            icon = i_match.group(1) if i_match else f"https://www.google.com/s2/favicons?domain={item.lower()}.com&sz=128"
             
             a_match = re.search(r'authors\s*=\s*listOf\((.*?)\)', txt)
             if a_match:
@@ -55,7 +60,7 @@ for item in sorted(os.listdir('.')):
                 "authors": authors,
                 "status": status,
                 "language": lang,
-                "tvTypes": tv_types,
+                "tvTypes": clean_types,
                 "iconUrl": icon,
                 "description": desc,
                 "fileSize": 25000
@@ -65,4 +70,4 @@ for item in sorted(os.listdir('.')):
 with open('plugins.json', 'w', encoding='utf-8') as f:
     json.dump(plugins, f, indent=4, ensure_ascii=False)
 
-print(f"Generated plugins.json with {len(plugins)} plugins (language: all).")
+print(f"Generated clean plugins.json with {len(plugins)} plugins.")
