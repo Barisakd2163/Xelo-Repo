@@ -1,11 +1,8 @@
 {
-  "iconUrl": "https://raw.githubusercontent.com/Barisakd2163/Xelo-Repo/refs/heads/master/.github/logo/cskarma.png",
-  "name": "xelo-repo",
-  "description": "Plugins Across All Categories and Languages.",
-  "manifestVersion": 1,
-  "pluginLists": [
-    "https://raw.githubusercontent.com/Barisakd2163/Xelo-Repo/refs/heads/builds/plugins.json"
-  ]
+    "name": "Xelo-Repo",
+    "description": "Xelo-Repo Eklenti Havuzu",
+    "manifestVersion": 1,
+    "pluginLists": [
+      "https://raw.githubusercontent.com/Barisakd2163/Xelo-Repo/builds/plugins.json"
+    ]
 }
-
-
