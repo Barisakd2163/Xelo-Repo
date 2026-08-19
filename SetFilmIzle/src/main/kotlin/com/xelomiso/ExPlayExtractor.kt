@@ -30,7 +30,7 @@ open class ExPlay : ExtractorApi() {
                 url     = m3uLink,
                 referer = url,
                 quality = Qualities.Unknown.value,
-                isM3u8  = true
+                type = ExtractorLinkType.M3U8
             )
         )
     }

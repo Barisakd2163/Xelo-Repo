@@ -55,7 +55,7 @@ open class Golge17 : ExtractorApi() {
                 url = streamLink,
                 referer = link,
                 quality = Qualities.Unknown.value,
-                isM3u8 = true,
+                type = ExtractorLinkType.M3U8,
                 headers = mapOf(
                     "origin" to link,
                     "Accept" to "*/*",

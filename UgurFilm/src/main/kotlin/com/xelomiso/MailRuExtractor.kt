@@ -35,7 +35,7 @@ open class MailRu : ExtractorApi() {
                     referer = url,
                     headers = mapOf("Cookie" to "video_key=${videoKey}"),
                     quality = getQualityFromName(video.key),
-                    isM3u8  = false
+                    type = ExtractorLinkType.VIDEO
                 )
             )
         }

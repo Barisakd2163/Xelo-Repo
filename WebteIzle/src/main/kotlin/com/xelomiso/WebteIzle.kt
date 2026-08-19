@@ -127,7 +127,7 @@ class WebteIzle : MainAPI() {
         val year        = document.selectXpath("//td[contains(text(), 'Vizyon')]/following-sibling::td").text().trim().split(" ").last().toIntOrNull()
         val description = document.selectFirst("blockquote")?.text()?.trim()
         val tags        = document.selectXpath("//a[@itemgroup='genre']").map { it.text() }
-        val rating      = document.selectFirst("div.detail")?.text()?.trim()?.replace(",", ".").toRatingInt()
+        val rating      = document.selectFirst("div.detail")?.text()?.trim()?.replace(",", ".")
         val duration    = document.selectXpath("//td[contains(text(), 'Süre')]/following-sibling::td").text().trim().split(" ").first().toIntOrNull()
         val trailer     = document.selectFirst("button#fragman")?.attr("data-ytid")
         val actors      = document.selectXpath("//div[@data-tab='oyuncular']//a").map {
@@ -139,7 +139,7 @@ class WebteIzle : MainAPI() {
             this.year      = year
             this.plot      = description
             this.tags      = tags
-            this.rating    = rating
+            // rating = rating
             this.duration  = duration
             addTrailer("https://www.youtube.com/embed/${trailer}")
             addActors(actors)
@@ -237,7 +237,7 @@ class WebteIzle : MainAPI() {
                             url     = m3uLink,
                             referer = "${mainUrl}/",
                             quality = getQualityFromName("1440p"),
-                            isM3u8  = true
+                            type = ExtractorLinkType.M3U8
                         )
                     )
 
@@ -257,7 +257,7 @@ class WebteIzle : MainAPI() {
                             url     = fixUrl(decoded),
                             referer = "${mainUrl}/",
                             quality = Qualities.Unknown.value,
-                            isM3u8  = true
+                            type = ExtractorLinkType.M3U8
                         )
                     )
                 }

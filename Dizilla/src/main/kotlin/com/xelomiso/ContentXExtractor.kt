@@ -44,7 +44,7 @@ open class ContentX : ExtractorApi() {
                 url     = m3uLink,
                 referer = url,
                 quality = Qualities.Unknown.value,
-                isM3u8  = true
+                type = ExtractorLinkType.M3U8
             )
         )
 
@@ -61,7 +61,7 @@ open class ContentX : ExtractorApi() {
                     url     = dublajLink,
                     referer = url,
                     quality = Qualities.Unknown.value,
-                    isM3u8  = true
+                    type = ExtractorLinkType.M3U8
                 )
             )
         }

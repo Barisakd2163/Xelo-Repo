@@ -32,7 +32,7 @@ open class CizgiDuo : ExtractorApi() {
                 url     = m3uLink ?: throw ErrorLoadingException("m3u link not found"),
                 referer = url,
                 quality = Qualities.Unknown.value,
-                isM3u8  = true
+                type = ExtractorLinkType.M3U8
             )
         )
     }

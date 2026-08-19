@@ -107,7 +107,7 @@ class GolgeTV : MainAPI() {
                 referer = headers["Referer"] ?: "",
                 quality = Qualities.Unknown.value,
                 headers = headers,
-                isM3u8 = true
+                type = ExtractorLinkType.M3U8
             )
         )
         return true

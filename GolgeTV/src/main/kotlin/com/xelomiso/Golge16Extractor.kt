@@ -60,7 +60,7 @@ open class Golge16 : ExtractorApi() {
                 url = streamLink,
                 referer = "",
                 quality = Qualities.Unknown.value,
-                isM3u8 = true,
+                type = ExtractorLinkType.M3U8,
             )
         )
     }

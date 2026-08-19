@@ -111,7 +111,7 @@ class NetflixMirror : MainAPI() {
         val castList = data.cast?.split(",")?.map { it.trim() } ?: emptyList()
         val cast     = castList.map {ActorData(Actor(it))}
         val genre    = listOf(data.ua.toString()) + (data.genre?.split(",")?.map { it.trim() }?.filter { it.isNotEmpty() } ?: emptyList())
-        val rating   = data.match?.replace("IMDb ", "")?.toRatingInt()
+        val rating   = data.match?.replace("IMDb ", "")?
         val runTime  = convertRuntimeToMinutes(data.runtime.toString())
 
         if (data.episodes.first() == null) {
@@ -146,7 +146,7 @@ class NetflixMirror : MainAPI() {
             year                 = data.year.toIntOrNull()
             tags                 = genre
             actors               = cast
-            this.rating          = rating
+            // rating = rating
             this.duration        = runTime
             this.recommendations = data.suggest?.map {
                 newMovieSearchResponse("", Id(it.id).toJson()) {

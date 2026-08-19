@@ -25,7 +25,7 @@ open class TurboImgz : ExtractorApi() {
                 url     = videoLink,
                 referer = extRef,
                 quality = Qualities.Unknown.value,
-                isM3u8  = true
+                type = ExtractorLinkType.M3U8
             )
         )
     }
