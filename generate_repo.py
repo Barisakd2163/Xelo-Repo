@@ -45,11 +45,15 @@ for item in sorted(os.listdir('.')):
             s_match = re.search(r'status\s*=\s*(\d+)', txt)
             status = int(s_match.group(1)) if s_match else 1
             
+            # Use item name as is, but lowercase/capitalize matching
+            cs3_name = item
+            # Gradle projects usually name artifact with project name or Capitalized
+            # In cs3 builds it matches project name:
             plugin_data = {
                 "name": item,
                 "internalName": item,
                 "version": version,
-                "url": f"{base_url}/{item}.cs3",
+                "url": f"{base_url}/{cs3_name}.cs3",
                 "apiVersion": 1,
                 "repositoryUrl": github_repo,
                 "authors": authors,
