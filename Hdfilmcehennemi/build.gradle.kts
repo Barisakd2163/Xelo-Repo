@@ -1,10 +1,9 @@
-// ! Bu araç @Kraptor123 tarafından | @cs-karma için yazılmıştır.
-version = 0
+version = 18
 
 cloudstream {
-    authors     = listOf("kraptor")
+    authors     = listOf("hexated", "keyiflerolsun")
     language    = "tr"
-    description = "filmdizi"
+    description = "Türkiye'nin en hızlı hd film izleme sitesi"
 
     /**
      * Status int as the following:
@@ -14,6 +13,6 @@ cloudstream {
      * 3: Beta only
     **/
     status  = 1 // will be 3 if unspecified
-    tvTypes = listOf("Movie") //Movie, AnimeMovie, TvSeries, Cartoon, Anime, OVA, Torrent, Documentary, AsianDrama, Live, NSFW, Others, Music, AudioBook, CustomMedia, Audio, Podcast,
-    iconUrl = "https://www.google.com/s2/favicons?sz=64&domain=yandex.com.tr"
+    tvTypes = listOf("Movie", "TvSeries")
+    iconUrl = "https://www.google.com/s2/favicons?domain=hdfilmcehennemi.com&sz=%size%"
 }
