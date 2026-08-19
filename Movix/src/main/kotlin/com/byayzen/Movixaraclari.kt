@@ -49,15 +49,15 @@ data class DownloadSource(
     val src: String?,
     val quality: String?,
     val language: String?,
-    val m3u8: String?
+    val m3u8: String
 )
 
 data class GenericSource(
-    val url: String?
+    val url: String
 )
 
 data class CpasmalRes(
-    val links: Map<String, List<GenericSource>>?
+    val links: Map<String, List<GenericSource>>
 )
 
 data class FstreamEpisode(val languages: Map<String, List<FstreamLink>>?)
@@ -81,7 +81,7 @@ data class TmdbMainResponse(
     val results: List<TmdbResult>,
     val page: Int?,
     val total_pages: Int?,
-    val total_results: Int?
+    val total_results: Int
 )
 
 data class TmdbResult(
@@ -93,13 +93,13 @@ data class TmdbResult(
     val poster_path: String?,
     val backdrop_path: String?,
     val media_type: String?,
-    val vote_average: Double?
+    val vote_average: Double
 )
 
 data class TmdbCast(
     val name: String?,
     val profile_path: String?,
-    val character: String?
+    val character: String
 )
 
 data class TmdbEpisode(
@@ -110,11 +110,11 @@ data class TmdbEpisode(
     val still_path: String?,
     val vote_average: Double?,
     val runtime: Int?,
-    val air_date: String?
+    val air_date: String
 )
 
 data class TmdbSeasonDetail(
-    val episodes: List<TmdbEpisode>?
+    val episodes: List<TmdbEpisode>
 )
 
 data class TmdbDetailResponse(
@@ -137,42 +137,42 @@ data class TmdbDetailResponse(
     val seasons_details: List<TmdbSeasonDetail>? = null,
     val images: TmdbImageResponse?,
     val status: String?,
-    val origin_country: List<String>?
+    val origin_country: List<String>
 )
 
 data class TmdbImageResponse(
-    val logos: List<TmdbLogo>?
+    val logos: List<TmdbLogo>
 )
 
 data class TmdbLogo(
     val file_path: String?,
-    val iso_639_1: String?
+    val iso_639_1: String
 )
 
 data class TmdbGenre(
     val id: Int?,
-    val name: String?
+    val name: String
 )
 
 data class TmdbCredits(
-    val cast: List<TmdbCast>?
+    val cast: List<TmdbCast>
 )
 
 data class TmdbVideoResponse(
-    val results: List<TmdbVideo>?
+    val results: List<TmdbVideo>
 )
 
 data class TmdbVideo(
     val key: String?,
     val site: String?,
-    val type: String?
+    val type: String
 )
 
 data class TmdbSeason(
     val season_number: Int?,
     val episode_count: Int?,
     val name: String?,
-    val poster_path: String?
+    val poster_path: String
 )
 
 data class MovixDownloadResponse(val sources: List<DownloadSource>?)
@@ -187,7 +187,7 @@ data class ImdbPlayer(val link: String?)
 
 data class MovixFstreamResponse(
     val links: Map<String, List<FstreamLink>>?,
-    val episodes: Map<String, FstreamEpisode>?
+    val episodes: Map<String, FstreamEpisode>
 )
 
 data class FstreamLink(val url: String?)
@@ -201,22 +201,22 @@ data class FrembedItem(val link: String?)
 
 data class MovixAnimeResponse(
     val name: String?,
-    val seasons: List<MovixAnimeSeason>?
+    val seasons: List<MovixAnimeSeason>
 )
 
 data class MovixAnimeSeason(
     val name: String?,
-    val episodes: List<MovixAnimeEpisode>?
+    val episodes: List<MovixAnimeEpisode>
 )
 
 data class MovixAnimeEpisode(
     val index: Int?,
-    val streaming_links: List<MovixAnimeStreamingLink>?
+    val streaming_links: List<MovixAnimeStreamingLink>
 )
 
 data class MovixAnimeStreamingLink(
     val language: String?,
-    val players: List<String>?
+    val players: List<String>
 )
 
 
@@ -242,12 +242,12 @@ data class MovixWiflixLink(
 
 data class MovixDramaResponse(
     val success: Boolean?,
-    val data: List<DramaLink>?
+    val data: List<DramaLink>
 )
 
 data class DramaLink(
     val name: String?,
-    val link: String?
+    val link: String
 )
 
 data class MovixAddressResponse(

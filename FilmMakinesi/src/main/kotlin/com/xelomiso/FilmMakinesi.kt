@@ -88,7 +88,7 @@ class FilmMakinesi : MainAPI() {
         val poster          = fixUrlNull(document.selectFirst("[property='og:image']")?.attr("content"))
         val description     = document.select("section#film_single article p").last()?.text()?.trim()
         val tags            = document.selectFirst("dt:contains(Tür:) + dd")?.text()?.split(", ")
-        val rating          = document.selectFirst("dt:contains(IMDB Puanı:) + dd")?.text()?.trim()?
+        val rating          = document.selectFirst("dt:contains(IMDB Puanı:) + dd")?.text()?.trim()
         val year            = document.selectFirst("dt:contains(Yapım Yılı:) + dd")?.text()?.trim()?.toIntOrNull()
 
         val durationElement = document.select("dt:contains(Film Süresi:) + dd time").attr("datetime")

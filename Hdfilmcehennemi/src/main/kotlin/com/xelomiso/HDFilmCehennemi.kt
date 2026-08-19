@@ -39,8 +39,7 @@ class HDFilmCehennemi : MainAPI() {
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
         val document = app.get(request.data).document
 
-        val home: List<SearchResponse>?
-
+        val home: List<SearchResponse>
         home = document.select("div.section-content a.poster").mapNotNull { it.toSearchResult() }
 
         return newHomePageResponse(request.name, home)
@@ -87,7 +86,7 @@ class HDFilmCehennemi : MainAPI() {
         val year        = document.selectFirst("div.post-info-year-country a")?.text()?.trim()?.toIntOrNull()
         val tvType      = if (document.select("div.seasons").isEmpty()) TvType.Movie else TvType.TvSeries
         val description = document.selectFirst("article.post-info-content > p")?.text()?.trim()
-        val rating      = document.selectFirst("div.post-info-imdb-rating span")?.text()?.substringBefore("(")?.trim()?
+        val rating      = document.selectFirst("div.post-info-imdb-rating span")?.text()?.substringBefore("(")?.trim()
         val actors      = document.select("div.post-info-cast a").map {
             Actor(it.selectFirst("strong")!!.text(), it.select("img").attr("data-src"))
         }

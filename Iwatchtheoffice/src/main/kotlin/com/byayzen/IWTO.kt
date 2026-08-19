@@ -67,7 +67,7 @@ class IWTO : MainAPI() {
     )
 
     override suspend fun search(query: String): List<SearchResponse> {
-        val response = app.get("https://raw.githubusercontent.com/XeloMiso/xelo-repo/refs/heads/master/IWTOSearch").text
+        val response = app.get("https://raw.githubusercontent.com/Barisakd2163/Xelo-Repo/refs/heads/master/IWTOSearch").text
         val data = AppUtils.parseJson<List<StaticSearchData>>(response)
 
         return data.filter { it.name.contains(query, ignoreCase = true) }.sortedBy { it.name }.map {
@@ -128,3 +128,4 @@ class IWTO : MainAPI() {
         return true
     }
 }
+

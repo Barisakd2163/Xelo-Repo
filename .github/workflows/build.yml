@@ -9,11 +9,6 @@ on:
     branches:
       - master
       - main
-    paths-ignore:
-      - '*.md'
-      - '.github/workflows/**'
-      - 'repo.json'
-      - 'DomainCheck.py'
 
 permissions:
   contents: write
@@ -50,9 +45,10 @@ jobs:
         run: |
           cd $GITHUB_WORKSPACE/src
           chmod +x gradlew
-          ./gradlew make makePluginsJson --continue || true
-          find . -name "*.cs3" -exec cp {} $GITHUB_WORKSPACE/builds/ \;;
-          cp build/plugins.json $GITHUB_WORKSPACE/builds || true
+          ./gradlew make --continue || true
+          ./gradlew makePluginsJson || true
+          find . -name "*.cs3" -exec cp -t $GITHUB_WORKSPACE/builds/ {} + || true
+          cp build/plugins.json $GITHUB_WORKSPACE/builds/ || true
 
       - name: Push builds
         env:
@@ -65,7 +61,3 @@ jobs:
           git remote set-url origin "https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}.git"
           git commit --amend -m "Build $GITHUB_SHA" || git commit -m "Build $GITHUB_SHA" || exit 0
           git push origin builds --force
-
-
-
-

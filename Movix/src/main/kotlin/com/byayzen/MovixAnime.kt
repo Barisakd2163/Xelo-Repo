@@ -34,7 +34,7 @@ object MovixAnimeExtractor {
         response: String,
         type: String,
         episode: String?,
-        season: String?
+        season: String
     ): List<Pair<String, String>> {
         val extracted = mutableListOf<Pair<String, String>>()
         Log.d("MovixAnime", "Ep: $episode, Season: $season")

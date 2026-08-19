@@ -80,17 +80,17 @@ open class AbyssExtractor : ExtractorApi() {
 
     data class AbyssResponse(
         @JsonProperty("status") val status: Int?,
-        @JsonProperty("result") val result: AbyssResult?
+        @JsonProperty("result") val result: AbyssResult
     )
 
     data class AbyssResult(
-        @JsonProperty("sources") val sources: List<AbyssSource>?
+        @JsonProperty("sources") val sources: List<AbyssSource>
     )
 
     data class AbyssSource(
         @JsonProperty("url") val url: String?,
         @JsonProperty("type") val type: String?,
-        @JsonProperty("codec") val codec: String?
+        @JsonProperty("codec") val codec: String
     )
 }
 

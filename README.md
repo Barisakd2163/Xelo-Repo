@@ -13,7 +13,7 @@ Uygulamanın kurulu olduğu cihazda alttaki logoya tıklayıp kurulumu gerçekle
 <br>
 You can install the repository by clicking the logo down below on the device where the app is installed.
 
-[<img alt="xelo-repo logo" width="200px" src="https://raw.githubusercontent.com/XeloMiso/xelo-repo/refs/heads/master/.github/logo/cskarma.png"/>](https://XeloMiso.github.io/redirect/?r=cloudstreamrepo://raw.githubusercontent.com/XeloMiso/xelo-repo/refs/heads/master/repo.json)
+[<img alt="xelo-repo logo" width="200px" src="https://raw.githubusercontent.com/Barisakd2163/Xelo-Repo/refs/heads/master/.github/logo/cskarma.png"/>](https://XeloMiso.github.io/redirect/?r=cloudstreamrepo://raw.githubusercontent.com/Barisakd2163/Xelo-Repo/refs/heads/master/repo.json)
 
 <h2 align="center">
 <br>
@@ -48,4 +48,5 @@ You can install the repository by clicking the logo down below on the device whe
 </table>
 
 </div>
+
 

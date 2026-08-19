@@ -56,7 +56,7 @@ data class SerieDetail(
 
 data class Cast(
     @JsonProperty("name")         val name: String,
-    @JsonProperty("profile_path") val profilePath: String?
+    @JsonProperty("profile_path") val profilePath: String
 )
 
 data class Genre(
@@ -66,7 +66,7 @@ data class Genre(
 data class Video(
     @JsonProperty("id")   val id: Int,
     @JsonProperty("link") val link: String,
-    @JsonProperty("lang") val lang: String?
+    @JsonProperty("lang") val lang: String
 )
 
 data class Search(

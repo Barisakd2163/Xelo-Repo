@@ -1,8 +1,8 @@
 [
     {
-        "iconUrl": "https://raw.githubusercontent.com/XeloMiso/xelo-repo/refs/heads/master/.github/logo/faviconAyzen.png",
+        "iconUrl": "https://raw.githubusercontent.com/Barisakd2163/Xelo-Repo/refs/heads/master/.github/logo/faviconAyzen.png",
         "apiVersion": 1,
-        "repositoryUrl": "https://github.com/XeloMiso/xelo-repo",
+        "repositoryUrl": "https://github.com/Barisakd2163/Xelo-Repo",
         "fileSize": 24013,
         "status": 1,
         "language": "tr",
@@ -15,13 +15,13 @@
         "version": 6,
         "internalName": "AyzenTv",
         "description": "AyzenTV ile canl\u0131 seyirin doruklar\u0131.",
-        "url": "https://raw.githubusercontent.com/XeloMiso/xelo-repo/builds/AyzenTv.cs3",
+        "url": "https://raw.githubusercontent.com/Barisakd2163/Xelo-Repo/builds/AyzenTv.cs3",
         "name": "AyzenTv"
     },
     {
-        "iconUrl": "https://raw.githubusercontent.com/XeloMiso/xelo-repo/refs/heads/master/.github/logo/faviconFsTv.png",
+        "iconUrl": "https://raw.githubusercontent.com/Barisakd2163/Xelo-Repo/refs/heads/master/.github/logo/faviconFsTv.png",
         "apiVersion": 1,
-        "repositoryUrl": "https://github.com/XeloMiso/xelo-repo",
+        "repositoryUrl": "https://github.com/Barisakd2163/Xelo-Repo",
         "fileSize": 9787,
         "status": 1,
         "language": "en",
@@ -34,13 +34,13 @@
         "version": 5,
         "internalName": "FsTv",
         "description": "Watch live sport on tv with full HD streaming videos for football, tennis, basketball games world-wide and more. Get live scores, results, highlights on Fstv",
-        "url": "https://raw.githubusercontent.com/XeloMiso/xelo-repo/builds/FsTv.cs3",
+        "url": "https://raw.githubusercontent.com/Barisakd2163/Xelo-Repo/builds/FsTv.cs3",
         "name": "FsTv"
     },
     {
         "iconUrl": "https://www.google.com/s2/favicons?domain=fullraces.com&sz=%size%",
         "apiVersion": 1,
-        "repositoryUrl": "https://github.com/XeloMiso/xelo-repo",
+        "repositoryUrl": "https://github.com/Barisakd2163/Xelo-Repo",
         "fileSize": 9724,
         "status": 1,
         "language": "en",
@@ -53,13 +53,13 @@
         "version": 1,
         "internalName": "FullRaces",
         "description": "Formula 1 is one of the most popular and dramatic sports in the world. You can watch Formula One races replays videos online and enjoy every moment of this exciting sports event. We offer to watch F1 Full Races replays FREE in HD",
-        "url": "https://raw.githubusercontent.com/XeloMiso/xelo-repo/builds/FullRaces.cs3",
+        "url": "https://raw.githubusercontent.com/Barisakd2163/Xelo-Repo/builds/FullRaces.cs3",
         "name": "FullRaces"
     },
     {
         "iconUrl": "https://www.google.com/s2/favicons?domain=www.fullreplays.com&sz=%size%",
         "apiVersion": 1,
-        "repositoryUrl": "https://github.com/XeloMiso/xelo-repo",
+        "repositoryUrl": "https://github.com/Barisakd2163/Xelo-Repo",
         "fileSize": 10566,
         "status": 1,
         "language": "en",
@@ -72,13 +72,13 @@
         "version": 1,
         "internalName": "FullReplays",
         "description": "Watch latest football full match replay of Premier League, Champions League, LaLiga, Serie A, Bundesliga, Ligue 1, Europa League, and more...",
-        "url": "https://raw.githubusercontent.com/XeloMiso/xelo-repo/builds/FullReplays.cs3",
+        "url": "https://raw.githubusercontent.com/Barisakd2163/Xelo-Repo/builds/FullReplays.cs3",
         "name": "FullReplays"
     },
     {
         "iconUrl": "https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=https://streamed.pk/&size=128",
         "apiVersion": 1,
-        "repositoryUrl": "https://github.com/XeloMiso/xelo-repo",
+        "repositoryUrl": "https://github.com/Barisakd2163/Xelo-Repo",
         "fileSize": 31481,
         "status": 1,
         "language": "un",
@@ -91,7 +91,8 @@
         "version": 6,
         "internalName": "Streamed",
         "description": "Streamed ile Canl\u0131 Spor Yay\u0131nlar\u0131n\u0131 \u0130zleyebilirsiniz.",
-        "url": "https://raw.githubusercontent.com/XeloMiso/xelo-repo/builds/Streamed.cs3",
+        "url": "https://raw.githubusercontent.com/Barisakd2163/Xelo-Repo/builds/Streamed.cs3",
         "name": "Streamed"
     }
 ]
+

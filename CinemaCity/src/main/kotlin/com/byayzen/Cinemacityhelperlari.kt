@@ -24,7 +24,7 @@ data class TmdbMainResponse(
     val results: List<TmdbResult>,
     val page: Int?,
     @JsonProperty("total_pages") val total_pages: Int?,
-    @JsonProperty("total_results") val total_results: Int?
+    @JsonProperty("total_results") val total_results: Int
 )
 
 data class TmdbResult(
@@ -36,13 +36,13 @@ data class TmdbResult(
     @JsonProperty("poster_path") val poster_path: String?,
     @JsonProperty("backdrop_path") val backdrop_path: String?,
     @JsonProperty("media_type") val media_type: String?,
-    @JsonProperty("vote_average") val vote_average: Double?
+    @JsonProperty("vote_average") val vote_average: Double
 )
 
 data class TmdbCast(
     val name: String?,
     @JsonProperty("profile_path") val profile_path: String?,
-    val character: String?
+    val character: String
 )
 
 data class TmdbEpisode(
@@ -53,11 +53,11 @@ data class TmdbEpisode(
     @JsonProperty("still_path") val still_path: String?,
     @JsonProperty("vote_average") val vote_average: Double?,
     val runtime: Int?,
-    @JsonProperty("air_date") val air_date: String?
+    @JsonProperty("air_date") val air_date: String
 )
 
 data class TmdbSeasonDetail(
-    val episodes: List<TmdbEpisode>?
+    val episodes: List<TmdbEpisode>
 )
 
 data class TmdbDetailResponse(
@@ -78,42 +78,42 @@ data class TmdbDetailResponse(
     val videos: TmdbVideoResponse?,
     val seasons: List<TmdbSeason>?,
     val images: TmdbImageResponse?,
-    val status: String?
+    val status: String
 )
 
 data class TmdbImageResponse(
-    val logos: List<TmdbLogo>?
+    val logos: List<TmdbLogo>
 )
 
 data class TmdbLogo(
     @JsonProperty("file_path") val file_path: String?,
-    @JsonProperty("iso_639_1") val iso_639_1: String?
+    @JsonProperty("iso_639_1") val iso_639_1: String
 )
 
 data class TmdbGenre(
     val id: Int?,
-    val name: String?
+    val name: String
 )
 
 data class TmdbCredits(
-    val cast: List<TmdbCast>?
+    val cast: List<TmdbCast>
 )
 
 data class TmdbVideoResponse(
-    val results: List<TmdbVideo>?
+    val results: List<TmdbVideo>
 )
 
 data class TmdbVideo(
     val key: String?,
     val site: String?,
-    val type: String?
+    val type: String
 )
 
 data class TmdbSeason(
     @JsonProperty("season_number") val season_number: Int?,
     @JsonProperty("episode_count") val episode_count: Int?,
     val name: String?,
-    @JsonProperty("poster_path") val poster_path: String?
+    @JsonProperty("poster_path") val poster_path: String
 )
 
 

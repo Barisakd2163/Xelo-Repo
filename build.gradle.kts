@@ -70,7 +70,7 @@ subprojects {
 
     cloudstream {
         // when running through github workflow, GITHUB_REPOSITORY should contain current repository name
-        setRepo(System.getenv("GITHUB_REPOSITORY") ?: "https://github.com/XeloMiso/xelo-repo")
+        setRepo(System.getenv("GITHUB_REPOSITORY") ?: "https://github.com/Barisakd2163/Xelo-Repo")
 
         authors = listOf("xelo")
     }
@@ -137,3 +137,4 @@ gradle.taskGraph.whenReady {
     }
 }
 // trigger
+

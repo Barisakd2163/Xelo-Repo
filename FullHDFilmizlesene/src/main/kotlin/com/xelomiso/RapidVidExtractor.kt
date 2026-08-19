@@ -31,8 +31,7 @@ open class RapidVid : ExtractorApi() {
         }
 
         var extractedValue   = Regex("""file": "(.*)",""").find(videoReq)?.groupValues?.get(1)
-        val decoded: String?
-
+        val decoded: String
         if (extractedValue != null) {
             val bytes = extractedValue.split("\\x").filter { it.isNotEmpty() }.map { it.toInt(16).toByte() }.toByteArray()
             decoded   = String(bytes, Charsets.UTF_8)

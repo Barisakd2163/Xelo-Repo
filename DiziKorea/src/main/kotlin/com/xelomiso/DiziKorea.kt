@@ -83,7 +83,7 @@ class DiziKorea : MainAPI() {
         val year        = document.selectFirst("h1 span")?.text()?.substringAfter("(")?.substringBefore(")")?.toIntOrNull()
         val description = document.selectFirst("div.series-profile-summary p")?.text()?.trim()
         val tags        = document.select("div.series-profile-type a").mapNotNull { it.text().trim() }
-        val rating      = document.selectFirst("span.color-imdb")?.text()?.trim()?
+        val rating      = document.selectFirst("span.color-imdb")?.text()?.trim()
         val duration    = document.selectXpath("//span[text()='Süre']//following-sibling::p").text().trim().split(" ").first().toIntOrNull()
         val trailer     = document.selectFirst("div.series-profile-trailer")?.attr("data-yt")
         val actors      = document.select("div.series-profile-cast li").map {

@@ -6,7 +6,7 @@ import com.fasterxml.jackson.annotation.JsonProperty
 
 
 data class SearchResult(
-    @JsonProperty("data") val data: SearchData?
+    @JsonProperty("data") val data: SearchData
 )
 
 data class SearchData(

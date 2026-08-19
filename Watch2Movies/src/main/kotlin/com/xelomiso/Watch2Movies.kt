@@ -86,7 +86,7 @@ class Watch2Movies : MainAPI() {
             ?.toIntOrNull()
 
         val tags            = document.select("div.row-line a[href*='/genre/']").map { it.text() }
-        val rating          = document.selectFirst("button.btn-imdb")?.text()?.trim()?.split(" ")?.last()?
+        val rating          = document.selectFirst("button.btn-imdb")?.text()?.trim()?.split(" ")?.last()
         val duration = document.select("div.row-line")
             .firstOrNull { it.text().contains("Duration:") }
             ?.text()

@@ -43,7 +43,7 @@ data class Anime(
     @JsonProperty("genres") val tags: List<Genre>,
     @JsonProperty("trailer") val trailer: String?,
     @JsonProperty("credits") val actors: List<Credit>,
-    @JsonProperty("season_count") val seasonCount: Int, //Unrealiable?
+    @JsonProperty("season_count") val seasonCount: Int, //Unrealiable
     @JsonProperty("seasons") val seasons: List<Season>,
     @JsonProperty("videos") val videos: List<Video>
 )

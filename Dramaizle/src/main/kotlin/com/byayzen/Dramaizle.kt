@@ -213,7 +213,7 @@ class DramaFlix : MainAPI() {
         @param:JsonProperty("platform") val platform: String?,
         @param:JsonProperty("total_episodes") val total_episodes: Int?,
         @param:JsonProperty("tags") val tags: List<String>?,
-        @param:JsonProperty("createdAt") val createdAt: Long?
+        @param:JsonProperty("createdAt") val createdAt: Long
     )
 
     data class Detay(
@@ -227,12 +227,12 @@ class DramaFlix : MainAPI() {
         @param:JsonProperty("episode_number") val episode_number: Int,
         @param:JsonProperty("url") val url: String?,
         @param:JsonProperty("thumbnail") val thumbnail: String?,
-        @param:JsonProperty("subtitles") val subtitles: List<Altyazi>?
+        @param:JsonProperty("subtitles") val subtitles: List<Altyazi>
     )
 
     data class Altyazi(
         @param:JsonProperty("language") val language: String,
         @param:JsonProperty("url") val url: String,
-        @param:JsonProperty("label") val label: String?
+        @param:JsonProperty("label") val label: String
     )
 }

@@ -24,7 +24,7 @@ object CryptoJS {
     private const val AES         = "AES"
     private const val KDF_DIGEST  = "MD5"
 
-    // Seriously crypto-js, what's wrong with you?
+    // Seriously crypto-js, what's wrong with you
     private const val APPEND      = "Salted__"
 
     /**

@@ -16,7 +16,7 @@ open class HDMomPlayer : ExtractorApi() {
     override val requiresReferer = true
 
     override suspend fun getUrl(url: String, referer: String?, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit) {
-        val m3uLink:String?
+        val m3uLink:String
         val extRef  = referer ?: ""
         val iSource = app.get(url, referer=extRef).text
 
@@ -66,6 +66,6 @@ open class HDMomPlayer : ExtractorApi() {
         @JsonProperty("label")    val label: String?,
         @JsonProperty("kind")     val kind: String?,
         @JsonProperty("language") val language: String?,
-        @JsonProperty("default")  val default: String?
+        @JsonProperty("default")  val default: String
     )
 }

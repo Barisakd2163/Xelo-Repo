@@ -13,7 +13,7 @@ class MixPlayHD : ExtractorApi() {
     override val requiresReferer = true
 
     override suspend fun getUrl(url: String, referer: String?, subtitleCallback: (SubtitleFile) -> Unit, callback: (ExtractorLink) -> Unit) {
-        val m3uLink:String?
+        val m3uLink:String
         val extRef  = referer ?: ""
         val iSource = app.get(url, referer=extRef).text
 

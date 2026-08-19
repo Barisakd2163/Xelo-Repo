@@ -90,7 +90,7 @@ class SuperFilmGeldi : MainAPI() {
         val year            = document.selectFirst("div.release a")?.text()?.toIntOrNull()
         val description     = document.selectFirst("div.excerpt p")?.text()?.trim()
         val tags            = document.select("div.categories a").map { it.text() }
-        val rating          = document.selectFirst("span.imdb-rating")?.text()?.trim()?.split(" ")?.first()?
+        val rating          = document.selectFirst("span.imdb-rating")?.text()?.trim()?.split(" ")?.first()
         val recommendations = document.select("div.film-content div.existing_item").mapNotNull { it.toSearchResult() }
         val actors          = document.select("div.actor a").map {
             Actor(it.text())
