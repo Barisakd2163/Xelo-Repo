@@ -1,4 +1,4 @@
-// ! Bu araç @ByAyzen tarafından | @cs-karma için yazılmıştır.
+// ! Bu araç @ByAyzen tarafından | @xelo-repo için yazılmıştır.
 package com.byayzen
 
 import com.lagradost.cloudstream3.plugins.CloudstreamPlugin
@@ -59,3 +59,4 @@ class MovixPlugin: Plugin() {
         registerExtractorAPI(flemmix())
     }
 }
+

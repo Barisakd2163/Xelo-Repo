@@ -1,4 +1,4 @@
-// ! Bu araç @kerimmkirac tarafından | @CS-Karma için yazılmıştır!
+// ! Bu araç @kerimmkirac tarafından | @xelo-repo için yazılmıştır!
 
 package com.kerimmkirac
 

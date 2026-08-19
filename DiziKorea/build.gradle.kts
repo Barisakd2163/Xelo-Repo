@@ -1,7 +1,7 @@
 version = 4
 
 cloudstream {
-    authors     = listOf("keyiflerolsun")
+    authors     = listOf("xelomiso")
     language    = "tr"
     description = "En Güncel Kore Dizileri izleme Sitesi"
 

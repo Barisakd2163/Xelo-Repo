@@ -1,4 +1,4 @@
-// ! Bu araç @ByAyzen tarafından | @kekikanime için yazılmıştır.
+// ! Bu araç @ByAyzen tarafından | @Xeloanime için yazılmıştır.
 version = 4
 
 cloudstream {

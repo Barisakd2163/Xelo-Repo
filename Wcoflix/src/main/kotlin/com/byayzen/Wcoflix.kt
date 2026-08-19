@@ -1,4 +1,4 @@
-// ! Bu araç @ByAyzen tarafından | @cs-kraptor için yazılmıştır.
+// ! Bu araç @ByAyzen tarafından | @cs-xelo için yazılmıştır.
 
 package com.byayzen
 
@@ -163,14 +163,14 @@ class Wcoflix : MainAPI() {
         subtitleCallback: (SubtitleFile) -> Unit,
         callback: (ExtractorLink) -> Unit
     ): Boolean {
-        Log.d("kraptor_WcoFLix", data)
+        Log.d("xelo_WcoFLix", data)
         val response = app.get(data)
-        Log.d("kraptor_WcoFLix", response.url)
-        Log.d("kraptor_WcoFLix", response.code.toString())
+        Log.d("xelo_WcoFLix", response.url)
+        Log.d("xelo_WcoFLix", response.code.toString())
         val episodeDocument = response.document
 
         val embedUrl = episodeDocument.selectFirst("iframe")?.attr("src") ?: ""
-        Log.d("kraptor_WcoFLix", embedUrl)
+        Log.d("xelo_WcoFLix", embedUrl)
 
         loadExtractor(embedUrl, referer = "${mainUrl}/", subtitleCallback, callback)
 

@@ -1,4 +1,4 @@
-// ! Bu araç @ByAyzen tarafından | @cs-karma için yazılmıştır.
+// ! Bu araç @ByAyzen tarafından | @xelo-repo için yazılmıştır.
 
 package com.byayzen
 
@@ -155,7 +155,7 @@ class KissKH : MainAPI() {
                 }
             }
 
-//            Log.d("kraptor_Tmdb", "Matched tmdbRes = $tmdbData")
+//            Log.d("xelo_Tmdb", "Matched tmdbRes = $tmdbData")
 
             // Eşleşme bulunduysa, Türkçe detayları çek
             if (tmdbData != null) {
@@ -182,7 +182,7 @@ class KissKH : MainAPI() {
                 }
             }
         } catch (e: Exception) {
-//            Log.e("kraptor_Tmdb", "TMDB fetch error: ${e.message}", e)
+//            Log.e("xelo_Tmdb", "TMDB fetch error: ${e.message}", e)
             // Hata durumunda orijinal verileri kullan
         }
 

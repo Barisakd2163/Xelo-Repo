@@ -1,8 +1,8 @@
-// ! Bu araç @Kraptor123 tarafından | @CS-Karma için yazılmıştır.
+// ! Bu araç @XeloMiso tarafından | @xelo-repo için yazılmıştır.
 version = 9
 
 cloudstream {
-    authors     = listOf("kraptor", "ByAyzen")
+    authors     = listOf("xelo", "ByAyzen")
     language    = "en"
     description = "1950’lerden günümüze… 40.000’den fazla maç ve 100.000’den fazla oyuncu."
     status  = 1

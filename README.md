@@ -1,6 +1,6 @@
 <div align="center">
 
-# `Cs-Karma`
+# `xelo-repo`
 
 `Kısa Kodlar`: **cskarma** ya da **karmator**
 <br>
@@ -13,14 +13,14 @@ Uygulamanın kurulu olduğu cihazda alttaki logoya tıklayıp kurulumu gerçekle
 <br>
 You can install the repository by clicking the logo down below on the device where the app is installed.
 
-[<img alt="Cs-Karma logo" width="200px" src="https://raw.githubusercontent.com/Kraptor123/Cs-Karma/refs/heads/master/.github/logo/cskarma.png"/>](https://kraptor123.github.io/redirect/?r=cloudstreamrepo://raw.githubusercontent.com/Kraptor123/cs-Karma/refs/heads/master/repo.json)
+[<img alt="xelo-repo logo" width="200px" src="https://raw.githubusercontent.com/XeloMiso/xelo-repo/refs/heads/master/.github/logo/cskarma.png"/>](https://XeloMiso.github.io/redirect/?r=cloudstreamrepo://raw.githubusercontent.com/XeloMiso/xelo-repo/refs/heads/master/repo.json)
 
 <h2 align="center">
 <br>
-  <a href="https://linktr.ee/kraptorcs">Tüm Linklerim</a>
+  <a href="https://linktr.ee/xelocs">Tüm Linklerim</a>
   <br>
   <br>
-  <a href="https://linktr.ee/kraptorcs">All Of My Links</a>
+  <a href="https://linktr.ee/xelocs">All Of My Links</a>
 </h2>
 
 # `Geliştiriciler` | `Developers`
@@ -28,9 +28,9 @@ You can install the repository by clicking the logo down below on the device whe
 <table>
   <tr>
     <td align="center">
-      <a href="https://github.com/Kraptor123">
-        <img src="https://avatars.githubusercontent.com/u/89366989?v=4" width="80;" alt="Kraptor"/><br />
-        <sub><b>kraptor</b></sub>
+      <a href="https://github.com/XeloMiso">
+        <img src="https://avatars.githubusercontent.com/u/89366989?v=4" width="80;" alt="xelo"/><br />
+        <sub><b>xelo</b></sub>
         </a>
     </td>
      <td align="center">
@@ -48,3 +48,4 @@ You can install the repository by clicking the logo down below on the device whe
 </table>
 
 </div>
+

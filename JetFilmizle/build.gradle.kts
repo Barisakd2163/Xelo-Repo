@@ -1,7 +1,7 @@
 version = 19
 
 cloudstream {
-    authors     = listOf("keyiflerolsun")
+    authors     = listOf("xelomiso")
     language    = "tr"
     description = "Binlerce Film İzleme Seçeneğiyle En İyi Film İzleme Sitesi"
 

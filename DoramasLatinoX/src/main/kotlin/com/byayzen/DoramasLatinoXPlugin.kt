@@ -1,4 +1,4 @@
-// ! Bu araç @byayzen tarafından | @CS-Karma için yazılmıştır.
+// ! Bu araç @byayzen tarafından | @xelo-repo için yazılmıştır.
 package com.byayzen
 
 import com.lagradost.cloudstream3.extractors.OkRuSSL

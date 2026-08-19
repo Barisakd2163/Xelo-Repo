@@ -1,7 +1,7 @@
 version = 4
 
 cloudstream {
-    authors     = listOf("Cloudburst", "keyiflerolsun")
+    authors     = listOf("Cloudburst", "xelomiso")
     language    = "tr"
     description = "YouTube, izlediğiniz videolarla önerilerini iyileştirir. İlginizi çekebilecek içeriklerle dolu bir akış oluşturmak için video izlemeye başlayın."
 
@@ -16,3 +16,4 @@ cloudstream {
     tvTypes = listOf("Others")
     iconUrl = "https://www.google.com/s2/favicons?domain=youtube.com&sz=%size%"
 }
+

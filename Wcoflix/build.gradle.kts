@@ -1,8 +1,8 @@
-// ! Bu araç @ByAyzen tarafından | @cs-kraptor için yazılmıştır.
+// ! Bu araç @ByAyzen tarafından | @cs-xelo için yazılmıştır.
 version = 9
 
 cloudstream {
-    authors     = listOf("ByAyzen", "kraptor")
+    authors     = listOf("ByAyzen", "xelo")
     language    = "en"
     description = "We have wide range of cartoons and anime that you can watch in HD and High quality for free."
     status  = 1 // will be 3 if unspecified

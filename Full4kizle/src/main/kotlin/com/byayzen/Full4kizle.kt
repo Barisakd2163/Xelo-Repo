@@ -1,4 +1,4 @@
-// ! Bu araç @ByAyzen tarafından | @cs-karma için yazılmıştır.
+// ! Bu araç @ByAyzen tarafından | @xelo-repo için yazılmıştır.
 
 package com.byayzen
 
@@ -195,8 +195,8 @@ class Full4kizle : MainAPI() {
         val iframeUrl = element?.attr("data-litespeed-src").takeIf { !it.isNullOrBlank() }
             ?: element?.attr("src")
 
-        Log.d("kraptor_$name", "LoadLinks URL: $data")
-        Log.d("kraptor_$name", "Iframe URL: $iframeUrl")
+        Log.d("xelo_$name", "LoadLinks URL: $data")
+        Log.d("xelo_$name", "Iframe URL: $iframeUrl")
 
         if (!iframeUrl.isNullOrEmpty() && iframeUrl != "about:blank") {
             loadExtractor(iframeUrl, data, subtitleCallback, callback)

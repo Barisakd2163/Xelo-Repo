@@ -1,4 +1,4 @@
-# ! Bu araç @Kraptor123 tarafından | @Cs-kraptor için yazılmıştır.
+# ! Bu araç @XeloMiso tarafından | @Cs-xelo için yazılmıştır.
 #!/usr/bin/env python3
 # coding: utf-8
 

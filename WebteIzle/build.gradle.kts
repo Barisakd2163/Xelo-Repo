@@ -1,7 +1,7 @@
 version = 15
 
 cloudstream {
-    authors     = listOf("keyiflerolsun")
+    authors     = listOf("xelomiso")
     language    = "tr"
     description = "Her türlü filmi ister dublaj ister altyazılı, en kaliteli bir şekilde izleyebileceğiniz arşivi en geniş gerçek film izleme siteniz."
 
@@ -16,3 +16,4 @@ cloudstream {
     tvTypes = listOf("Movie")
     iconUrl = "https://www.google.com/s2/favicons?domain=webteizle2.com&sz=%size%"
 }
+

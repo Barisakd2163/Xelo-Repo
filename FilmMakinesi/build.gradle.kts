@@ -1,7 +1,7 @@
 version = 6
 
 cloudstream {
-    authors     = listOf("keyiflerolsun", "usdogu")
+    authors     = listOf("xelomiso", "usdogu")
     language    = "tr"
     description = "Film Makinesi, en yeni ve en güncel filmleri sitemizde full HD kalite farkı ile izleyebilirsiniz. HD film izle denildiğinde akla gelen en kaliteli film izleme sitesi."
 
@@ -16,3 +16,4 @@ cloudstream {
     tvTypes = listOf("Movie")
     iconUrl = "https://www.google.com/s2/favicons?domain=filmmakinesi.film&sz=%size%"
 }
+

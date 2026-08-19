@@ -1,8 +1,8 @@
-// ! Bu araç @Kraptor123 tarafından | @kekikanime için yazılmıştır.
+// ! Bu araç @XeloMiso tarafından | @Xeloanime için yazılmıştır.
 version = 13
 
 cloudstream {
-    authors     = listOf("kraptor", "Phisher98", "Hexated")
+    authors     = listOf("xelo", "Phisher98", "Hexated")
     language    = "id"
     description = "Nonton dan download film & series terbaru di LK21. Streaming sub Indo gratis, kualitas HD. Tersedia drama Korea, anime, film barat, dan Asia lengkap!"
     status  = 1 // will be 3 if unspecified

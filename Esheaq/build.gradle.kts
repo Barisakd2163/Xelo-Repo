@@ -1,8 +1,8 @@
-// ! Bu araç @Kraptor123 tarafından | @kekikanime için yazılmıştır.
+// ! Bu araç @XeloMiso tarafından | @Xeloanime için yazılmıştır.
 version = 18
 
 cloudstream {
-    authors     = listOf("kraptor")
+    authors     = listOf("xelo")
     language    = "ar"
     description = "قصة عشق الأصلي لأحدث المسلسلات التركية والدراما المترجمة علي قصه عشق ، يمكنك من خلال موقع قصة عشق مشاهدة كل جديد في عالم الدراما التركية"
 

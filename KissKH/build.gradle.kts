@@ -1,8 +1,8 @@
-// ! Bu araç @ByAyzen tarafından | @CS-Karma için yazılmıştır!
+// ! Bu araç @ByAyzen tarafından | @xelo-repo için yazılmıştır!
 version = 4
 
 cloudstream {
-    authors     = listOf("kraptor" ,"ByAyzen")
+    authors     = listOf("xelo" ,"ByAyzen")
     language    = "en"
     description = "Watch drama online in high quality. Free download high quality drama. Various formats from 240p to 720p HD (or even 1080p). Feel Free To Watch!"
     status  = 1 // will be 3 if unspecified

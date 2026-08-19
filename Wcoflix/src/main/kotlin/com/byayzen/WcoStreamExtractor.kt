@@ -16,7 +16,7 @@ open class WcoStreamExtractor : ExtractorApi() {
         subtitleCallback: (SubtitleFile) -> Unit,
         callback: (ExtractorLink) -> Unit
     ) {
-        Log.d("kraptor_Wco", url)
+        Log.d("xelo_Wco", url)
         val qp = url.substringAfter("?", "").split("&")
             .associate { val p = it.split("=", limit = 2); p[0] to (p.getOrNull(1) ?: "") }
 
@@ -36,7 +36,7 @@ open class WcoStreamExtractor : ExtractorApi() {
             apiPath = "$mainUrl/inc/embed/getvidlink.php?v=$v&embed=$embed&hd=$hdVal"
         }
 
-        Log.d("kraptor_Wco", v)
+        Log.d("xelo_Wco", v)
 
         val cevap = try {
             val response = app.get(
@@ -44,21 +44,21 @@ open class WcoStreamExtractor : ExtractorApi() {
                 referer = url,
                 headers = mapOf("X-Requested-With" to "XMLHttpRequest")
             )
-            Log.d("kraptor_Wco", response.text)
+            Log.d("xelo_Wco", response.text)
             mapper.readValue<WcoCevap>(response.text)
         } catch (e: Exception) {
-            Log.d("kraptor_Wco", e.toString())
+            Log.d("xelo_Wco", e.toString())
             null
         } ?: return
 
         val host = (cevap.server ?: cevap.cdn ?: "").replace("\\", "").trim()
             .let { if (it.endsWith("/")) it else "$it/" }
 
-        Log.d("kraptor_Wco", host)
+        Log.d("xelo_Wco", host)
 
         if (!cevap.sub.isNullOrEmpty()) {
             val subUrl = "$host/getvid?evid=${cevap.sub}"
-            Log.d("kraptor_Wco", subUrl)
+            Log.d("xelo_Wco", subUrl)
             subtitleCallback(SubtitleFile(lang = "en", url = subUrl))
         }
 
@@ -67,7 +67,7 @@ open class WcoStreamExtractor : ExtractorApi() {
             cevap.hd?.takeIf { it.isNotEmpty() }?.let { it to "HD" },
             cevap.enc?.takeIf { it.isNotEmpty() }?.let { it to "SD" }
         ).forEach { (evid, kalite) ->
-            Log.d("kraptor_Wco", "$kalite: $evid")
+            Log.d("xelo_Wco", "$kalite: $evid")
             try {
                 val vidPath = "$host/getvid?evid=$evid&json"
                 val raw = app.get(
@@ -75,7 +75,7 @@ open class WcoStreamExtractor : ExtractorApi() {
                     referer = "$mainUrl/",
                     headers = mapOf("Origin" to mainUrl)
                 ).text.trim().replace("\"", "").replace("\\", "")
-                Log.d("kraptor_Wco", raw)
+                Log.d("xelo_Wco", raw)
 
                 if (raw.startsWith("http")) {
                     var videoUrl = raw
@@ -91,7 +91,7 @@ open class WcoStreamExtractor : ExtractorApi() {
                                 videoUrl = finalUrl
                             }
                         } catch (e: Exception) {
-                            Log.d("kraptor_Wco", e.toString())
+                            Log.d("xelo_Wco", e.toString())
                         }
                     }
                     callback(
@@ -106,7 +106,7 @@ open class WcoStreamExtractor : ExtractorApi() {
                     )
                 }
             } catch (e: Exception) {
-                Log.d("kraptor_Wco", e.toString())
+                Log.d("xelo_Wco", e.toString())
             }
         }
     }

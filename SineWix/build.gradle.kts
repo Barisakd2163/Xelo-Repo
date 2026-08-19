@@ -1,7 +1,7 @@
 version = 11
 
 cloudstream {
-    authors     = listOf("keyiflerolsun", "yusiqo")
+    authors     = listOf("xelomiso", "yusiqo")
     language    = "tr"
     description = "Sinewix | Ücretsiz Film - Dizi - Anime İzleme Uygulaması."
 

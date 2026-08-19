@@ -1,7 +1,7 @@
 version = 28
 
 cloudstream {
-    authors     = listOf("keyiflerolsun", "muratcesmecioglu")
+    authors     = listOf("xelomiso", "muratcesmecioglu")
     language    = "tr"
     description = "en yeni dizileri güvenli ve hızlı şekilde sunar."
 
@@ -16,3 +16,4 @@ cloudstream {
     tvTypes = listOf("TvSeries", "Movie")
     iconUrl = "https://www.google.com/s2/favicons?domain=https://dizipal683.com&sz=%size%"
 }
+

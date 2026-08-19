@@ -1,4 +1,4 @@
-// ! Bu araç @ByAyzen tarafından | @kekikanime için yazılmıştır.
+// ! Bu araç @ByAyzen tarafından | @Xeloanime için yazılmıştır.
 package com.byayzen
 
 import com.lagradost.cloudstream3.plugins.CloudstreamPlugin

@@ -1,8 +1,8 @@
-// ! Bu araç @Kraptor123 tarafından | @CS-Karma için yazılmıştır!
+// ! Bu araç @XeloMiso tarafından | @xelo-repo için yazılmıştır!
 version = 2
 
 cloudstream {
-    authors     = listOf("kraptor")
+    authors     = listOf("xelo")
     language    = "ar"
     description = "قرمزي – المنصة رقم #1 لمشاهدة المسلسلات التركية مترجمة الى العربية وبجودة عالية، مع تحديثات يومية للحلقات فور صدورها. مجاني بالكامل وبدون إشتراك."
     status  = 1 // will be 3 if unspecified

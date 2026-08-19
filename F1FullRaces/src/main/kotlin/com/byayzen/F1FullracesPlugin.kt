@@ -1,4 +1,4 @@
-// ! Bu araç @ByAyzen tarafından | @kekikanime için yazılmıştır.
+// ! Bu araç @ByAyzen tarafından | @Xeloanime için yazılmıştır.
 package com.byayzen
 
 import android.content.Context
@@ -28,4 +28,5 @@ class F1FullracesPlugin: Plugin() {
 
 
 }
+
 

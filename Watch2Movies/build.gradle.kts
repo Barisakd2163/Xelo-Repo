@@ -1,7 +1,7 @@
 version = 0
 
 cloudstream {
-    authors     = listOf("keyiflerolsun")
+    authors     = listOf("xelomiso")
     language    = "en"
     description = "!!! YAPIM AŞAMASINDA !!! Watch2Movies is a Free Movies streaming site with zero ads. We let you watch movies online without having to register or paying, with over 10000 movies and TV-Series. You can also Download full movies from Watch2Movies and watch it later if you want."
 

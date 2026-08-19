@@ -1,8 +1,8 @@
-// ! Bu araç @Kraptor123 tarafından | @kekikanime için yazılmıştır.
+// ! Bu araç @XeloMiso tarafından | @Xeloanime için yazılmıştır.
 version = 7
 
 cloudstream {
-    authors     = listOf("ByAyzen", "kraptor")
+    authors     = listOf("ByAyzen", "xelo")
     language    = "en"
     description = "Cinema City."
     status  = 0 // will be 3 if unspecified

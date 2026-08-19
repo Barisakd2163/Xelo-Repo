@@ -36,3 +36,4 @@ if __name__ == "__main__":
     aranacak = input("Test etmek için bir dizi/film adı yazın (örn: Breaking Bad): ")
     search_dizibox(aranacak)
     input('\nÇıkmak için Enter a basın...')
+

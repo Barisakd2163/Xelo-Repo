@@ -1,4 +1,4 @@
-// ! Bu araç @ByAyzen tarafından | @cs-karma için yazılmıştır.
+// ! Bu araç @ByAyzen tarafından | @xelo-repo için yazılmıştır.
 version = 1
 
 cloudstream {

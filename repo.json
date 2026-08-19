@@ -1,9 +1,10 @@
 {
-  "iconUrl": "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/refs/heads/master/.github/logo/cskarma.png",
-  "name": "cs-karma",
+  "iconUrl": "https://raw.githubusercontent.com/XeloMiso/xelo-repo/refs/heads/master/.github/logo/cskarma.png",
+  "name": "xelo-repo",
   "description": "Plugins Across All Categories and Languages.",
   "manifestVersion": 1,
   "pluginLists": [
-    "https://raw.githubusercontent.com/Kraptor123/Cs-Karma/refs/heads/builds/plugins.json"
+    "https://raw.githubusercontent.com/XeloMiso/xelo-repo/refs/heads/builds/plugins.json"
   ]
 }
+

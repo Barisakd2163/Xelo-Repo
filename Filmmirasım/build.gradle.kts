@@ -1,4 +1,4 @@
-// ! Bu araç @ByAyzen tarafından | @cs-kraptor için yazılmıştır.
+// ! Bu araç @ByAyzen tarafından | @cs-xelo için yazılmıştır.
 version = 4
 
 cloudstream {

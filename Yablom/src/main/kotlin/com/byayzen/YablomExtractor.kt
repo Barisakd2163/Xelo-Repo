@@ -1,4 +1,4 @@
-//Bu araç @ByAyzen tarafından | Cs-Karma için yazılmıştır.
+//Bu araç @ByAyzen tarafından | xelo-repo için yazılmıştır.
 
 package com.byayzen
 

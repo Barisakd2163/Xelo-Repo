@@ -1,8 +1,8 @@
-// ! This Extension Made By @Kraptor123 for GizliKeyif
+// ! This Extension Made By @XeloMiso for GizliKeyif
 version = 0
 
 cloudstream {
-    authors     = listOf("kraptor")
+    authors     = listOf("xelo")
     language    = "en"
     description = "DESCRIPTIONDONOTFORGET"
 

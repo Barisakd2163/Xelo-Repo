@@ -1,6 +1,6 @@
-# ! Bu araç @keyiflerolsun tarafından | @KekikAkademi için yazılmıştır.
+# ! Bu araç @xelomiso tarafından | @XeloRepo için yazılmıştır.
 
-from Kekik.cli    import konsol
+from Xelo.cli    import konsol
 from cloudscraper import CloudScraper
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import unpad

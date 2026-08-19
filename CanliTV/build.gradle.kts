@@ -1,7 +1,7 @@
 version = 5
 
 cloudstream {
-    authors     = listOf("Adippe", "keyiflerolsun")
+    authors     = listOf("Adippe", "xelomiso")
     language    = "tr"
     description = "Canlı TV"
 
@@ -16,3 +16,4 @@ cloudstream {
     tvTypes = listOf("Live")
     iconUrl = "https://www.google.com/s2/favicons?domain=tr.canlitv.team&sz=%size%"
 }
+

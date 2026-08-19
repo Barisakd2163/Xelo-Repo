@@ -1,8 +1,8 @@
-// ! Bu araç @Kraptor123 tarafından | @cs-kraptor için yazılmıştır.
+// ! Bu araç @XeloMiso tarafından | @cs-xelo için yazılmıştır.
 version = 17
 
 cloudstream {
-    authors     = listOf("kraptor", "ByAyzen")
+    authors     = listOf("xelo", "ByAyzen")
     language    = "mx"
     description = "Disfruta de los últimos episodios y animes agregados en HD y Sub Español. Miles de series, películas y OVAs disponibles para ver online totalmente gratis."
     status  = 1 // will be 3 if unspecified

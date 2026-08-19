@@ -70,13 +70,13 @@ subprojects {
 
     cloudstream {
         // when running through github workflow, GITHUB_REPOSITORY should contain current repository name
-        setRepo(System.getenv("GITHUB_REPOSITORY") ?: "https://github.com/Kraptor123/Cs-Karma")
+        setRepo(System.getenv("GITHUB_REPOSITORY") ?: "https://github.com/XeloMiso/xelo-repo")
 
-        authors = listOf("kraptor")
+        authors = listOf("xelo")
     }
 
     android {
-        namespace = "com.kraptor.${project.name.lowercase().replace("-", "_")}"
+        namespace = "com.xelo.${project.name.lowercase().replace("-", "_")}"
         compileSdk = 36
 
         defaultConfig {

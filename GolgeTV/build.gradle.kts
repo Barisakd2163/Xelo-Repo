@@ -1,7 +1,7 @@
 version = 4
 
 cloudstream {
-    authors     = listOf("usdogu", "keyiflerolsun")
+    authors     = listOf("usdogu", "xelomiso")
     language    = "tr"
     description = "GolgeTV cloudstream eklentisidir. Sevdiğiniz yayın platformlarını ve canlı maçları burada bulabilirsiniz."
 

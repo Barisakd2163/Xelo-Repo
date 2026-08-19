@@ -146,9 +146,9 @@ def main():
     if not name: return
     url = (sys.argv[2] if len(sys.argv) > 2 else input("URL (Varsayılan: https://ornek.com): ")).strip() or "https://ornek.com"
     if url and not url.startswith("http"): url = "https://" + url
-    pkg = input(f"Paket: ").strip() or "com.kraptor"
+    pkg = input(f"Paket: ").strip() or "com.xelo"
     if not pkg.startswith("com."): pkg = f"com.{pkg}"
-    user = input("Yazar: ").strip() or "kraptor"
+    user = input("Yazar: ").strip() or "xelo"
     lang = input("Dil: ").strip() or "tr"
     desc = input("Açıklama: ").strip() or f"{name} eklentisi."
     icon = input("Favicon: ").strip() or (f"https://www.google.com/s2/favicons?sz=64&domain={url}" if url else "https://")
@@ -164,7 +164,7 @@ def main():
     shutil.copytree(src, dst)
 
     root = os.path.join(dst, "src", "main", "kotlin")
-    o_pkg, n_pkg = os.path.join(root, "com", "kraptor"), os.path.join(root, *pkg.split('.'))
+    o_pkg, n_pkg = os.path.join(root, "com", "xelo"), os.path.join(root, *pkg.split('.'))
     tmp_pkg = os.path.join(dst, "tmp_pkg_move")
 
     if os.path.exists(o_pkg):
@@ -184,7 +184,7 @@ def main():
             p = os.path.join(r, f)
             try:
                 with open(p, 'r', encoding='utf-8') as fl: c = fl.read()
-                c = c.replace("@Kraptor123", f"@{user}").replace("New", name)
+                c = c.replace("@XeloMiso", f"@{user}").replace("New", name)
                 c = re.sub(r'package\s+[\w.]+', f'package {pkg}', c)
                 c = re.sub(r'authors\s*=\s*listOf\(.*?\)', f'authors     = listOf("{user}")', c)
                 c = re.sub(r'language\s*=\s*".*?"', f'language    = "{lang}"', c)
@@ -208,3 +208,4 @@ def main():
     print(f"\n✅ '{name}' tamamlandı.")
 
 if __name__ == "__main__": main()
+

@@ -1,4 +1,4 @@
-// ! Bu araç @Kraptor123 tarafından | @cs-karma için yazılmıştır.
+// ! Bu araç @XeloMiso tarafından | @xelo-repo için yazılmıştır.
 package com.byayzen
 
 import com.lagradost.cloudstream3.plugins.CloudstreamPlugin

@@ -1,8 +1,8 @@
-// ! Bu araç @Kraptor123 tarafından | @CS-Karma için yazılmıştır.
+// ! Bu araç @XeloMiso tarafından | @xelo-repo için yazılmıştır.
 version = 17
 
 cloudstream {
-    authors     = listOf("kraptor")
+    authors     = listOf("xelo")
     language    = "en"
     description = "Watch WWE | WWE Raw | Smackdown Live"
     status  = 1 // will be 3 if unspecified

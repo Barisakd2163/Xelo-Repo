@@ -1,8 +1,8 @@
-// ! Bu araç @Kraptor123 tarafından | @CS-Karma için yazılmıştır.
+// ! Bu araç @XeloMiso tarafından | @xelo-repo için yazılmıştır.
 version = 4
 
 cloudstream {
-    authors     = listOf("kraptor")
+    authors     = listOf("xelo")
     language    = "en"
     description = "YoTurkish - is the most favorite website for watching turkish series with english subtitles for free online, only at yoturkish.to"
     status  = 1 // will be 3 if unspecified

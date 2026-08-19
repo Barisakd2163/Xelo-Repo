@@ -99,7 +99,7 @@ class CinemaCity : MainAPI() {
 
         val results = doc.select("div.dle-fast_item").mapNotNull { it.toSearchResult() }
 
-        Log.d("kraptor_$name", "${results.size}")
+        Log.d("xelo_$name", "${results.size}")
 
         return newSearchResponseList(results, false)
     }
@@ -320,7 +320,7 @@ class CinemaCity : MainAPI() {
         callback: (ExtractorLink) -> Unit
     ): Boolean {
 
-        Log.d("kraptor_Cinema", data)
+        Log.d("xelo_Cinema", data)
 
         try {
             val json: Video = if (data.trimStart().startsWith("[")) {
@@ -364,11 +364,12 @@ class CinemaCity : MainAPI() {
             )
 
         } catch (e: Exception) {
-            Log.d("kraptor_Cinema", "$e")
+            Log.d("xelo_Cinema", "$e")
             return false
         }
 
         return true
     }
 }
+
 
