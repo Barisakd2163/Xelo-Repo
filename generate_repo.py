@@ -24,8 +24,9 @@ for item in sorted(os.listdir('.')):
             d_match = re.search(r'description\s*=\s*"(.*?)"', txt)
             desc = d_match.group(1) if d_match else f"{item} Plugin"
             
-            # Use "un" (CloudStream's official Universal language code that bypasses all language filters)
-            lang = "un"
+            l_match = re.search(r'language\s*=\s*"(.*?)"', txt)
+            lang = l_match.group(1) if l_match else "tr"
+            if lang == "mx": lang = "es"
             
             tv_match = re.search(r'tvTypes\s*=\s*listOf\((.*?)\)', txt)
             if tv_match:
@@ -70,4 +71,4 @@ for item in sorted(os.listdir('.')):
 with open('plugins.json', 'w', encoding='utf-8') as f:
     json.dump(plugins, f, indent=4, ensure_ascii=False)
 
-print(f"Generated clean plugins.json with {len(plugins)} plugins (language: un).")
+print(f"Generated clean plugins.json with proper languages ({len(plugins)} plugins).")
