@@ -22,8 +22,8 @@ for item in sorted(os.listdir('.')):
             d_match = re.search(r'description\s*=\s*"(.*?)"', txt)
             desc = d_match.group(1) if d_match else f"{item} Plugin"
             
-            l_match = re.search(r'language\s*=\s*"(.*?)"', txt)
-            lang = l_match.group(1) if l_match else "tr"
+            # Set language to "all" so CloudStream shows it unconditionally!
+            lang = "all"
             
             tv_match = re.search(r'tvTypes\s*=\s*listOf\((.*?)\)', txt)
             if tv_match:
@@ -45,15 +45,11 @@ for item in sorted(os.listdir('.')):
             s_match = re.search(r'status\s*=\s*(\d+)', txt)
             status = int(s_match.group(1)) if s_match else 1
             
-            # Use item name as is, but lowercase/capitalize matching
-            cs3_name = item
-            # Gradle projects usually name artifact with project name or Capitalized
-            # In cs3 builds it matches project name:
             plugin_data = {
                 "name": item,
                 "internalName": item,
                 "version": version,
-                "url": f"{base_url}/{cs3_name}.cs3",
+                "url": f"{base_url}/{item}.cs3",
                 "apiVersion": 1,
                 "repositoryUrl": github_repo,
                 "authors": authors,
@@ -69,4 +65,4 @@ for item in sorted(os.listdir('.')):
 with open('plugins.json', 'w', encoding='utf-8') as f:
     json.dump(plugins, f, indent=4, ensure_ascii=False)
 
-print(f"Generated plugins.json with {len(plugins)} plugins.")
+print(f"Generated plugins.json with {len(plugins)} plugins (language: all).")
